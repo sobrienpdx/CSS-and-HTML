@@ -1,0 +1,77 @@
+body {
+  box-sizing: border-box;
+  color: #11114c;
+  background-image: url(binary.png);
+  border:2px solid ;
+  /*background-color: rgb(11, 13, 43, 0.5)*/
+  /*background-attachment: fixed;*/
+}
+
+
+
+nav {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  border: 2px solid;
+  background-color: rgb(11, 13, 43, 0.7)
+  /*border: 10px solid #2d2d5a;*/
+}
+
+a {
+  color: #0505a9;
+}
+
+nav a {
+  color: white;
+  padding: 2%;
+}
+
+#headshot {
+  border: 10px solid #2d2d5a;
+  width: 16%;
+  height: auto;
+  min-width: 150px;
+
+}
+section h2 {
+  display: inline-block;
+  padding-left: 20%;
+  font-size: 2.4em;
+}
+.background {
+  padding:2%;
+  border: 2px solid;
+  background-color: rgb(180, 180, 185, 0.8)
+}
+
+header {
+  border:2px solid ;
+  background-color: rgb(180, 180, 185, 0.8)
+
+}
+
+header h1 {
+  padding-left: 10%;
+  /*font-size: 3em;*/
+  font-size: 6vh;
+  margin: .3em;
+}
+
+header h2 {
+  padding-left: 30%;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  #headshot {
+    width: 100%;
+  }
+}
+
+@supports (display: flex) {
+  ul{
+    display: flex;
+  }
+}
+/*used for things that might not be supported on all devices*/
