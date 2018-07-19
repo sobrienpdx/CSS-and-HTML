@@ -1,0 +1,86 @@
+body {
+  box-sizing: border-box;
+  color: #fff;
+  /*background-image: url(binary.png);*/
+  /*border:2px solid ;*/
+  background-color: #000000;
+
+  /*background-color: rgb(11, 13, 43, 0.5)*/
+  /*background-attachment: fixed;*/
+}
+@font-face {
+    font-family: my_underwood;
+    src: url(MyUnderwood.ttf);
+  }
+
+nav {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  /*border: 2px solid;*/
+  background-color: rgb(6, 6, 6, 1)
+  /*border: 10px solid #2d2d5a;*/
+}
+
+a {
+  color: #0505a9;
+}
+
+nav a {
+  color: white;
+  padding: 2%;
+}
+
+#headshot {
+  /*border: 10px solid #2d2d5a;*/
+  width: 20%;
+  height: auto;
+  min-width: 150px;
+
+}
+section h2 {
+  display: inline-block;
+  padding-left: 20%;
+  font-size: 2.4em;
+}
+.background {
+  padding:2%;
+  /*border: 2px solid;*/
+  background-color: rgba(0, 0, 0, 1)
+}
+
+header {
+  /* border: 2px solid; */
+  background: linear-gradient(rgba(6, 6, 6, 1),rgba(245, 245, 249, 0.3)), url(computer2.png);
+  background-size: 100% auto;
+  font-family: "my_underwood";
+  height: 48vh;
+}
+
+
+header h1 {
+  padding-left: 10%;
+  padding-top: 3.5%;
+  /* font-size: 3em; */
+  font-size: 8vh;
+  margin: .6em;
+}
+
+header h2 {
+  padding-left: 45%;
+  padding-top: 7%;
+  font-size: 2em;
+}
+
+/*@media only screen and (min-width: 800px) {
+  #headshot {
+    width: 100%;
+  }
+}
+
+@supports (display: flex) {
+  ul{
+    display: flex;
+  }
+}*/
+/*used for things that might not be supported on all devices*/
