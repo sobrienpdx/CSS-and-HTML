@@ -1,0 +1,184 @@
+body {
+  box-sizing: border-box;
+  color: #dadada;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .7),rgba(14, 14, 14, .7)), url(background.jpg);
+  margin: 0;
+  font-family: "my_underwood";
+  background-attachment: fixed;
+}
+@font-face {
+    font-family: my_underwood;
+    src: url(MyUnderwood.ttf);
+  }
+
+nav {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  background-color: rgb(0, 0, 0, 1)
+}
+a {
+  font-size: 1.8em;
+  color: #a5a2a2;
+}
+
+.resumelink a {
+  font-size: 2.3em;
+  color: grey;
+}
+
+.resumelink a:hover{
+    color: blue;
+}
+
+#resumeimage {
+  width: 60vw;
+  padding: 2%;
+}
+
+nav a {
+  color: white;
+  padding: 2%;
+}
+
+#headshot {
+  padding: 1.5em;
+  width: 20vw;
+}
+
+.rightpage h2 {
+  padding-bottom: 5%;
+  font-size: 2.4em;
+  margin: 0;
+}
+
+.background {
+  padding:2%;
+}
+
+header {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+header h1 {
+  padding-left: 15%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-size: 5vw;
+  margin: 0;
+}
+
+
+header h2 {
+  padding-left: 55%;
+  padding-top: 1%;
+  font-size: 4vw;
+  padding-bottom: 4%;
+  margin: 0;
+}
+.background {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.2em;
+  width: 25vw;
+}
+
+.rightpage {
+  padding: 1%;
+  padding-top: 4%;
+  width: 60vw;
+}
+
+
+.rightpage h3,{
+  font-size: 1.5em;
+}
+
+/*@media only screen and (max-width: 423px) {
+  .background {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .rightpage {
+    width: 100%;
+  }
+}*/
+
+.squares {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  20% 3fr 3fr;*/
+  grid-gap: 1.9em;
+  grid-template-areas:
+    "i i "
+    "front back "
+
+}
+ .squares-intro{
+  /*grid-column-start: 1;
+  grid-column-end: 4;*/
+}
+.squares div:not(.squares-intro) {
+  border: solid;
+  color: #2d2c2c;
+  padding: 6vw;
+  transition-duration: 0.5s;
+}
+
+
+.squares div:not(.intro):hover {
+  /*background: pink;*/
+  color: #fff;
+  transition-duration: 2s;
+}
+
+.squares-intro {
+  grid-area: i;
+}
+.front-end {
+  grid-area: front;
+}
+.back-end {
+  grid-area: back;
+}
+
+
+@media screen and (max-width: 900px) {
+  .squares {
+    display: grid;
+    /*grid-template-columns: 1fr;
+    grid-template-rows:  20% 3fr 3fr 3fr 3fr 3fr 3fr 3fr;*/
+    grid-gap: 1.9em;
+    grid-template-areas:
+    "i  "
+    "front "
+    "back "
+    }
+  .rightpage {
+    width: 100%;
+    }
+  .background {
+    display: flex;
+    flex-wrap: wrap-reverse;*/
+    }
+  }
+
+
+
+
+/*
+@supports (display: flex) {
+  ul{
+    display: flex;
+  }
+}*/
+/*used for things that might not be supported on all devices*/

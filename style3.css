@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  color: #fff;
+  color: #dadada;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, .7),rgba(14, 14, 14, .7)), url(background.jpg);
   margin: 0;
@@ -17,6 +17,11 @@ nav {
   padding: 20px;
   font-size: 1.2em;
   background-color: rgb(0, 0, 0, 1)
+}
+
+a {
+    font-size: 1.1em;
+    color: #a5a2a2;
 }
 
 .resumelink a {
@@ -94,9 +99,17 @@ header h2 {
   width: 60vw;
 }
 
+.rightpage h3{
+  font-size: 1.5em;
+}
 .rightpage h3, .rightpage h2, .rightpage p, ul {
   font-family: "Courier New", Courier, monospace;
 }
+
+
+
+
+
 
 @media only screen and (max-width: 423px) {
   .background {

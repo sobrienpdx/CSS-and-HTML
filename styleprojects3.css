@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  color: #fff;
+  color: #dadada;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, .7),rgba(14, 14, 14, .7)), url(background.jpg);
   margin: 0;
@@ -17,6 +17,10 @@ nav {
   padding: 20px;
   font-size: 1.2em;
   background-color: rgb(0, 0, 0, 1)
+}
+a {
+  font-size: 1.1em;
+  color: #a5a2a2;
 }
 
 .resumelink a {
@@ -97,6 +101,9 @@ header h2 {
 .rightpage h3, .rightpage h2, .rightpage p, ul {
   font-family: "Courier New", Courier, monospace;
 }
+.rightpage h3,{
+  font-size: 1.5em;
+}
 
 /*@media only screen and (max-width: 423px) {
   .background {
@@ -114,10 +121,11 @@ header h2 {
   grid-template-rows:  20% 3fr 3fr;*/
   grid-gap: 1.9em;
   grid-template-areas:
-    "i i i"
-    "p1 p2 p3"
-    "p4 p5 p6"
-    "p7 p7 p7"
+    "i i "
+    "p1 p2"
+    "p3 p4"
+    "p5 p6"
+    "p7 p7"
 }
  .intro{
   /*grid-column-start: 1;
@@ -125,17 +133,24 @@ header h2 {
 }
 .projectmenu div:not(.intro) {
   border: solid;
+  color: #2d2c2c;
   padding: .7em;
+  transition-duration: 0.5s;
+}
+
+
+.projectmenu div:not(.intro):hover {
+  /*background: pink;*/
+  color: #fff;
+  transition-duration: 2s;
 }
 
 .intro {
   grid-area: i;
 }
-
 .p1 {
   grid-area: p1;
 }
-
 .p2 {
   grid-area: p2;
 }
