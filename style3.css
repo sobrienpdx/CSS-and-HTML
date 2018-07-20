@@ -45,7 +45,7 @@ nav a {
 
 #headshot {
   padding: 1.5em;
-  width: 20vw;
+  width: 15vw;
 }
 
 .rightpage h2 {
@@ -118,6 +118,10 @@ header h2 {
   }
   .rightpage {
     width: 100%;
+  }
+  #headshot {
+    padding: 1em;
+    width: 40vw;
   }
 }
 

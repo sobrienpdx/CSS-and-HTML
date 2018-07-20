@@ -98,7 +98,7 @@ header h2 {
   width: 60vw;
 }
 
-.rightpage h3, .rightpage h2, .rightpage p, ul {
+.rightpage h3,  .rightpage p, ul {
   font-family: "Courier New", Courier, monospace;
 }
 .rightpage h3,{
