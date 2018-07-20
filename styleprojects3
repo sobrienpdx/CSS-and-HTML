@@ -2,12 +2,10 @@ body {
   box-sizing: border-box;
   color: #fff;
   width: 100%;
-  /*background-image: url(binary.png);*/
-  /*border:2px solid ;*/
-sty   /*background: linear-gradient(rgba(0, 0, 0, .7),rgba(14, 14, 14, .7)), url(background.jpg);*/
+  background: linear-gradient(rgba(0, 0, 0, .7),rgba(14, 14, 14, .7)), url(background.jpg);
   margin: 0;
   font-family: "my_underwood";
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 @font-face {
     font-family: my_underwood;
@@ -18,11 +16,21 @@ nav {
   text-align: center;
   padding: 20px;
   font-size: 1.2em;
-  background-color: rgb(20, 20, 20, 1)
+  background-color: rgb(0, 0, 0, 1)
 }
 
-a {
-  color: #0505a9;
+.resumelink a {
+  font-size: 2.3em;
+  color: grey;
+}
+
+.resumelink a:hover{
+    color: blue;
+}
+
+#resumeimage {
+  width: 60vw;
+  padding: 2%;
 }
 
 nav a {
@@ -31,38 +39,29 @@ nav a {
 }
 
 #headshot {
-  /* border: 10px solid #2d2d5a; */
-  /*align-self: center;*/
   padding: 1.5em;
   width: 20vw;
-  /*height: auto;*/
-  /*min-width: 150px;*/
-
 }
+
 .rightpage h2 {
-  /* display: inline-block; */
-  /* padding-left: 20%; */
   padding-bottom: 5%;
   font-size: 2.4em;
   margin: 0;
 }
+
 .background {
   padding:2%;
-  background-color: rgba(0, 0, 0, 1)
 }
 
 header {
-  /* border: 2px solid; */
-  background: linear-gradient(rgba(0, 0, 0, 1),rgba(245, 245, 249, 0.3)), url(computer3.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: right bottom;
-
 }
 
 header h1 {
   padding-left: 15%;
-  padding-top: 7.5%;
+  padding-top: 3%;
   padding-bottom: 2%;
   font-size: 5vw;
   margin: 0;
@@ -73,13 +72,14 @@ header h2 {
   padding-left: 55%;
   padding-top: 1%;
   font-size: 4vw;
-  padding-bottom: 7%;
+  padding-bottom: 4%;
   margin: 0;
 }
 .background {
   display: flex;
   flex-wrap: wrap;
 }
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@ header h2 {
   width: 60vw;
 }
 
-.rightpage h3, .rightpage h2, .rightpage p {
+.rightpage h3, .rightpage h2, .rightpage p, ul {
   font-family: "Courier New", Courier, monospace;
 }
 
